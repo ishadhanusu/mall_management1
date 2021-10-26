@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style type="text/css">
+body
+{
+margin:0;
+font-family:system-ui;
+background-color:#F5A9D0;
+}
+.parallax{
+height :max-content;
+background-attachment:fixed;
+background-position:center;
+background-repeat:no-repeat;
+background-size:cover;
+font-size:50px;
+}
+.page-title
+{
+background:#B40431;
+text-align:center;
+color:#B40431;
+padding:50px;
+font-variant:small-caps;
+font-size:100px;
+font-family:fantasy;
+letter-spacing:10px;
+background-image:url(../images/grocery.jpg);
+}
+.sticky{
+position:fixed;
+top:0;
+width:100%;
+
+}
+.menu{
+background:#B40431;
+text-align:center;
+}
+.menu-ul{
+margin:0;
+padding:0;
+display:inline;
+}
+.menu-ul li{
+font-size:15px;
+list-style:none;
+display:inline-block;
+padding:25px 25px 26px 25px;
+}
+.a-menu{
+text-decoration:none;
+color:white;
+}
+.menu-ul li:hover{
+background:#70C68B;
+transform:scale(1.1);
+}
+.search-box{
+border:1pxnsolid white;
+border-radius:50px;
+background:white;
+width:max-content;
+display:inline-block;
+margin:8px;
+}
+.search-box:hover{
+box-shadow:0 0 10px 2px #5b8c5a;
+border:1px solid #5b8c5a;
+}
+.search-input
+{
+width:200px;
+border:none;
+font-size:15px;
+outline:none;
+background:transparent;
+margin:1px 0 0 10px;
+border:1px blue;
+}
+.container, .deals-container{
+margin:50px 50px 50px 5%;
+width:90%;
+text-align:center;
+}
+.deals-containe{
+margin:50px 50px 50px 5%;
+width:90%;
+text-align:center;
+background:#B40431;
+}
+.categories, .items{
+width:max-content;
+margin:25px;
+border:1px solid #184d47;
+border-radius:0 0 50px 50px;
+display:inline-block;}
+.categories:hover, .items:hover{
+box-shadow:0 0 10px 3px #184d47;
+}
+.item-image{
+height:150px;
+width:150px;
+border-radius:0 0 50px 50px;
+padding:10px;
+}
+.image-title{
+text-align:center;
+padding:10px;
+font-weight:bold;
+color:#B40431;
+}
+a{
+text-decoration:none;
+}
+.title{
+padding:50px;
+font-size:50px;
+font-weight:bold;
+letter-spacing:10px;
+color:white;
+background:rgba(0,0,0,0.5);
+
+}
+.deal{
+padding:50px;
+text-align:center;
+font-size:20px;
+font-weight:bold;
+color:white;
+display:inline-block;
+margin:20px;
+max-width:15%;
+background:linear-gradient(120deg,#16817a 20%,#cee397 50%,#16817a 80%);
+}
+.coupon-btn
+{
+border-radius:20px;
+border:1px solid white;
+color:#B40431;
+padding:10px;
+margin:10px;
+}
+.coupon-btn:hover{
+box-shadow:0 0 10px 5px yellow inset;
+}
+.images{
+display:inline-block;
+}
+.item-image-size{
+height:200px;
+width:300px;
+padding:5px;
+}
+.description{
+margin:20px;
+min-height:100px;
+}
+.item-select{
+margin:10px 0 0 0;
+}
+.buynow-btn{
+border:1px solid #184d47;
+background:#184d47;
+padding:5px 15px;
+border-radius:20px;
+font-weight:bold;
+margin-top:10px;
+color:white;
+}
+
+</style>
+</head>
+<body>
+<div class="parallax">
+<center><div class="Page-title">ANGEL GROCERY</div></center>
+</div><br><br><br>
+<div class="menu" id="sticky">
+<ul class="menu-ul">
+<a href="http://localhost:8081/Mall_Management1/Home.html"class="a-menu"><li>HOME</li></a>
+<a href="#VEGETABLES" class="a-menu"><li>VEGETABLES</li></a>
+<a href="#FRUITS" class="a-menu"><li>FRUITS</li></a>
+<a href="#MEAT" class="a-menu"><li>MEAT</li></a>
+<a href="http://localhost:8081/Mall_Management1/Home.html" class="a-menu"><li>LOGOUT</li></a>
+</ul>
+
+<!-- Search Box -->
+<div class="search-box">
+<form>
+<input type="text"  name="search" class="search-input"/>
+<input type="submit" name="submit" class="submit" value="search">
+</form>
+</div>
+</div>
+
+ <!-- Home page Begins -->
+ 
+ <div class="container">
+ <div class="categories"> 
+ <img src="images/vegitable1.jpg" class="item-image"/>
+ <div class="image-title">VEGETABLES</div>
+ </div>
+
+ <div class="categories"> 
+ <img src="images/Apple.jpg" class="item-image"/>
+ <div class="image-title">FRUITS</div>
+ </div>
+ 
+ <div class="categories"> 
+ <img src="images/chicken.png" class="item-image"/>
+ <div class="image-title">MEAT</div>
+ </div>
+ 
+ <div class="categories"> 
+ <img src="images/vegitable1.jpg" class="item-image"/>
+ <div class="image-title">DEALS</div>
+ </div>
+ 
+</div>
+<!-- Deal Begins Here -->
+
+<div class="deals-container" id="deals">
+<div class="parallax">
+<div class="title">DEALS</div>
+</div>
+<div class="deal">
+Save 20% on min -purchase of $149 on vegetables<br/>
+
+</div>
+<div class="deal">
+Save 10% on min -purchase of $180 on Fruits<br/>
+
+</div>
+<div class="deal">
+Save 15% on min -purchase of $160 on Meat & Sea foods<br/>
+
+</div>
+</div>
+<!-- Deal Ends Here -->
+
+<!-- Vegetables Begins Here -->
+<a href=#VEGETABLES>
+<div class="deals-container" id="vegetables">
+<div class="parallax">
+<div class="title"> VEGETABLES</div>
+</div>
+<div class="items">
+<div class="images">
+<img src="images/brinjalveg.jpg" class="item-image-size"/>
+</div>
+<div class="description">
+<b>Organic brinjal</b><br/>
+<div class="item-select">
+Price :42.99/250grams
+</div>
+<br/>
+<a href="http://localhost:8081/Mall_Management1/addproduct.jsp ">
+<button class="buynow-btn">Add Product</button>
+</a>
+</div>
+</div>
+<div class="items">
+<div class="images">
+<img src="images/Radishveg.jpg" class="item-image-size"/>
+</div>
+<div class="description">
+<b>Organic Radish</b><br/>
+<div class="item-select">
+Price :42.99/250grams
+</div>
+<br/>
+<a href="http://localhost:8081/Mall_Management1/addproduct.jsp">
+<button class="buynow-btn">Add product</button>
+</a>
+</div>
+</div>
+<div class="items">
+<div class="images">
+<img src="images/Ladies Finger.jpg" class="item-image-size"/>
+</div>
+<div class="description">
+<b>Organic Ladies Finger</b><br/>
+<div class="item-select">
+Price :25.99/250grams
+</div>
+<br/>
+<a href="http://localhost:8081/Mall_Management1/addproduct.jsp " >
+<button class="buynow-btn">Add product</button>
+</a>
+</div>
+</div>
+<div class="items">
+<div class="images">
+<img src="images/vegitable1.jpg" class="item-image-size"/>
+</div>
+<div class="description">
+<b>Organic Tomatos</b><br/>
+<div class="item-select">
+Price :52.99/250grams
+</div>
+<br/>
+<a href="http://localhost:8081/Mall_Management1/addproduct.jsp ">
+<button class="buynow-btn">Add product</button>
+</a>
+</div>
+</div>
+</div>
+</a>
+<a href="http://localhost:8082/Mall_Management1/Index.html">
+<center><button  class="Show More">Show More</button></center>
+</a>
+
+<!-- Vegetables End Here -->
+
+<!-- Fruits Starts Here -->
+<a href=#FRUITS>
+<div class="deals-container" id="Fruits">
+<div class="parallax">
+<div class="title"> FRUITS</div>
+</div>
+<div class="items">
+<div class="images">
+<img src="images/Grapes.jpeg" class="item-image-size"/>
+</div>
+<div class="description">
+<b>Organic Grapes</b><br/>
+<div class="item-select">
+Price :66.99/250grams
+</div>
+<br/>
+<a href="http://localhost:8081/Mall_Management1/addproduct.jsp">
+<button class="buynow-btn">Add product</button>
+</a>
+</div>
+</div>
+<div class="items">
+<div class="images">
+<img src="images/Apple.jpg" class="item-image-size"/>
+</div>
+<div class="description">
+<b>Organic Apple</b><br/>
+<div class="item-select">
+Price :87.99/250grams
+</div>
+<br/>
+<a href="http://localhost:8081/Mall_Management1/addproduct.jsp ">
+<button class="buynow-btn">Add product</button>
+</a>
+</div>
+</div>
+<div class="items">
+<div class="images">
+<img src="images/mango.jpg" class="item-image-size"/>
+</div>
+<div class="description">
+<b>Organic Mango</b><br/>
+<div class="item-select">
+Price :85/250grams
+</div>
+<br/>
+<a href="http://localhost:8081/Mall_Management1/addproduct.jsp ">
+<button class="buynow-btn">Add Product</button>
+</a>
+</div>
+</div>
+<div class="items">
+<div class="images">
+<img src="images/strawberry.jpg" class="item-image-size"/>
+</div>
+<div class="description">
+<b>Organic strawberry</b><br/>
+<div class="item-select">
+Price :120/250grams
+</div>
+<br/>
+<a href="http://localhost:8081/Mall_Management1/addproduct.jsp">
+<button class="buynow-btn">Add product</button>
+</a>
+</div>
+</div>
+</div>
+</a>
+<a href="http://localhost:8082/Mall_Management1/Index.html">
+<center><button  class="Show More">Show More</button></center>
+</a>
+<!-- Fruits Ends Here -->
+
+<!-- Meat & Sea Foods Starts Here -->
+<a href=#MEAT>
+<div class="deals-container" id="MEAT">
+<div class="parallax">
+<div class="title">MEAT</div>
+</div>
+<div class="items">
+<div class="images">
+<img src="images/prawns.jpg" class="item-image-size"/>
+</div>
+<div class="description">
+<b>prawns</b><br/>
+<div class="item-select">
+Price :120/250grams
+</div>
+<br/>
+<a href="http://localhost:8081/Mall_Management1/addproduct.jsp ">
+<button class="buynow-btn">Add Product</button>
+</a>
+</div>
+</div>
+<div class="items">
+<div class="images">
+<img src="images/crap.jpg" class="item-image-size"/>
+</div>
+<div class="description">
+<b>crab</b><br/>
+<div class="item-select">
+Price :66.99/250grams
+</div>
+<br/>
+<a href="http://localhost:8081/Mall_Management1/addproduct.jsp">
+<button class="buynow-btn">Add product</button>
+</a>
+</div>
+</div>
+<div class="items">
+<div class="images">
+<img src="images/fish.jpg" class="item-image-size"/>
+</div>
+<div class="description">
+<b>fish</b><br/>
+<div class="item-select">
+Price :85.99/250grams
+</div>
+<br/>
+<a href="http://localhost:8081/Mall_Management1/addproduct.jsp">
+<button class="buynow-btn">Add product</button>
+</a>
+</div>
+</div>
+<div class="items">
+<div class="images">
+<img src="images/chicken.png" class="item-image-size"/>
+</div>
+<div class="description">
+<b>chicken</b><br/>
+<div class="item-select">
+Price :150/250grams
+</div>
+<br/>
+<a href="http://localhost:8081/Mall_Management1/addproduct.jsp">
+<button class="buynow-btn">Add product</button>
+</a>
+</div>
+</div>
+</div>
+</a>
+<a href="http://localhost:8082/Mall_Management1/Index.html">
+<center><button  class="Show More">Show More</button></center>
+</a>
+
+<!--Meat & Sea Foods Ends Here  -->
+<!-- Home Page Ends -->
+</body>
+</html>
